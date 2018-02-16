@@ -3,15 +3,18 @@
 }
 
 .header--global {
-  display: flex;
-  position: sticky;
-  top: 0;
-  flex-flow: column wrap;
-  box-shadow: 0 3px 5px rgba($black, 0.6);
   margin-bottom: 2rem;
   padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $white;
+  box-shadow: 0 3px 5px rgba($black, 0.6);
 }
 
 .header__logo--global {
   max-height: 100px;
+  display: block;
+  margin: 0 auto;
 }
