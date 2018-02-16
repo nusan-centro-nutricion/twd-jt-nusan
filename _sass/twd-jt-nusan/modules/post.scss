@@ -29,9 +29,7 @@
 }
 
 .post__body {
-
-}
-
-.post__body h2 > p:last-of-type {
-  margin-bottom: 3rem;
+  h2 ~ p:last-of-type {
+    margin-bottom: 3rem;
+  }
 }
