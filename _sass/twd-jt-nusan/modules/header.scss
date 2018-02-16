@@ -15,12 +15,6 @@
   h1 {
     text-align: center;
   }
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 3rem;
-  }
 }
 
 .header__logo--global {
@@ -35,9 +29,6 @@
     }
     nav {
       flex: 2;
-    }
-    ul {
-      height: 100%;
     }
   }
 }
