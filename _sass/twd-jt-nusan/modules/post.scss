@@ -29,5 +29,9 @@
 }
 
 .post__body {
-  
+  ul {
+    width: 80%;
+    list-style: outside;
+    margin: 0 auto;
+  }
 }
