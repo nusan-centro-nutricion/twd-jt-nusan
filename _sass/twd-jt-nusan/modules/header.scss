@@ -20,3 +20,7 @@
 .header__logo--global {
   max-height: 100px;
 }
+
+@media screen and (min-width: 60em) {
+  flex-flow: row;
+}
