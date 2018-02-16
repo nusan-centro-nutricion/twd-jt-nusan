@@ -11,10 +11,12 @@
   flex-flow: column wrap;
   background-color: $white;
   box-shadow: 0 3px 5px rgba($black, 0.6);
+
+  h1 {
+    text-align: center;
+  }
 }
 
 .header__logo--global {
   max-height: 100px;
-  display: block;
-  margin: 0 auto;
 }
