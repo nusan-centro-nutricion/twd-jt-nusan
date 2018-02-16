@@ -12,7 +12,7 @@
 }
 
 .post__title {
-
+  margin-bottom: 2rem;
 }
 
 .post__image {
@@ -29,9 +29,13 @@
 }
 
 .post__body {
+  h2 {
+    margin-bottom: 2rem;
+  }
   ul {
     width: 80%;
     list-style: outside;
     margin: 0 auto;
+    margin-bottom: 1rem;
   }
 }
