@@ -2,4 +2,18 @@
 layout: default
 ---
 
-{{ content }}
+<article class="post">
+  <div class="post__content">
+    <header class="post__header">
+      <h1 class="post__title">{{ page.title }}</h1>
+      <figure>
+        <img src="{{ post.image }}" alt="">
+      </figure>
+      <p class="post_byline">{{ post.author }}</p>
+      <p class="post_tags">{{ post.categories | array_to_sentence_string: '' }}</p>
+    </header>
+    <div class="post__body">
+      {{ content }}
+    </div>
+  </div>
+</article>
