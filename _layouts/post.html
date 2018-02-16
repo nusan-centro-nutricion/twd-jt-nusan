@@ -10,7 +10,7 @@ layout: default
         <img src="{{ post.image }}" alt="">
       </figure>
       <p class="post_byline">{{ post.author }}</p>
-      <p class="post_tags">{{ post.tags | array_to_sentence_string: '' }}</p>
+      <p class="post_tags">{{ post.tags }}</p>
     </header>
     <div class="post__body">
       {{ content }}
