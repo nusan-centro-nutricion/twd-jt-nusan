@@ -6,16 +6,26 @@
   h1 {
     display: none;
   }
-  ul {
+  .menu__list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 3rem;
   }
-  li {
+  .menu__item {
+    padding: 0.5rem;
+    border-bottom: solid 3px $white;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: bold;
+    transition: 1s;
+    &:hover {
+      border-bottom: solid 3px $$green;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $green;
   }
 }
 
@@ -23,6 +33,6 @@
   .menu--main {
     ul {
       height: 100%;
-    }  
+    }
   }
 }
