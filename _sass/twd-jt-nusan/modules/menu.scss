@@ -14,18 +14,18 @@
   }
   .menu__item {
     padding: 0.5rem;
-    border-bottom: solid 3px $white;
+    border-bottom: solid 3px $body-bg-color;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: bold;
     transition: 1s;
     &:hover {
-      border-bottom: solid 3px $$green;
+      border-bottom: solid 3px $link-color;
     }
   }
   a {
     text-decoration: none;
-    color: $green;
+    color: $link-color;
   }
 }
 
