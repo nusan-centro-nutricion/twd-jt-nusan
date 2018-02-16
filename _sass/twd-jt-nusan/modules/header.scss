@@ -22,5 +22,7 @@
 }
 
 @media screen and (min-width: 60em) {
-  flex-flow: row;
+  .header__logo--global {
+    flex-flow: row;
+  }
 }
