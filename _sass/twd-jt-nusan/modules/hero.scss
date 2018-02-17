@@ -4,9 +4,15 @@
 
 .hero--front {
   margin-top: -$header--global-mb;
-  height: calc(100vh - 124px);
+  height: calc(100vh - calc($font-size * $font-line-height + $menu--main--item-p * 2 + $menu--main--item-bs));
   background-image: url(/assets/images/hero-background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 60em) {
+  .hero--front {
+    height: calc(100vh - 124px);
+  }
 }

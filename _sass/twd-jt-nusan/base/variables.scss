@@ -26,3 +26,12 @@ $font-line-height: 1.5;
  */
 
  $header--global-mb: 2rem;
+
+/**
+  Main Menu
+ */
+
+   $menu--main--item-p: 0.5rem;
+   $menu--main--item-bs: 3px;
+   $menu--main--item-bb: solid $body-bg-color $menu--main--item-bs;
+   $menu--main--item-bb-hover: solid $link-color $menu--main--item-bs;
