@@ -3,8 +3,19 @@
 }
 
 .footer--global {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
   background-color: $footer-bg-color;
   color:$footer-color;
+
+  .footer__item {
+
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .footer--global {
+    grid-template-columns: repeat(autofir, minmax(300px, 1fr));
+  }
 }
