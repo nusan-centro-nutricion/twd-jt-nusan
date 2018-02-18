@@ -13,7 +13,7 @@
 
       </section>
 
-      {% assign sections = site.sections | order: 'order' %}
+      {% assign sections = site.sections | sort: 'order' %}
       {% for section in sections %}
       <section>
         <header>
