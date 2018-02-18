@@ -3,6 +3,7 @@
  */
 
  $brown: hsl(22.8, 87.7%, 15.9%);
+ $dark-brown: hsl(22.8, 80%, 3.9%)
  $green: hsl(142.7, 18.8%, 61.4%);
  $light-gray: hsl(22.8, 16%, 94%);
  $dark-gray: hsl(22.8, 94%, 16%);
@@ -13,7 +14,7 @@
  $body-bg-color: $white;
  $link-color: $green;
  $footer-color: $light-gray;
- $footer-bg-color: $brown;
+ $footer-bg-color: $dark-brown;
 
  /**
    Fonts
