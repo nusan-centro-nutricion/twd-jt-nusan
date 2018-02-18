@@ -28,6 +28,13 @@ p {
 }
 hr { max-width: 38em; }
 
+ul {
+  width: 80%;
+  list-style: outside;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 dl {
   font-weight: bold;
 }
