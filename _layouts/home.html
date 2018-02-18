@@ -13,7 +13,8 @@
 
       </section>
 
-      {% for section in site.sections %}
+      {% assign sections = site.section | order: 'order' %}
+      {% for section in sections %}
       <section>
         <header>
           <h1>{{ section.title }}</h1>
