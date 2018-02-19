@@ -18,6 +18,14 @@
   text-transform: uppercase;
   text-shadow: 0 3px 5px opacify($black, 0.6);
   font-size: 2.0625rem;
+
+  a {
+    padding: 3rem;
+    border-radius: 5px;
+    background-color: $hero-color;
+    color: $body-color;
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (min-width: 60em) {
