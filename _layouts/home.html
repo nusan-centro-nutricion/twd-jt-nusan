@@ -13,24 +13,10 @@
 
       </section>
 
-      {% assign sections = site.sections | sort: 'order' %}
-      {% for section in sections %}
-      <section class="section">
-        <div class="section__content">
-          <header class="section_header">
-            <h1>{{ section.title }}</h1>
-          </header>
-          <div class="section__body">
-            {{ section.content }}
-          </div>
-        </div>
-      </section>
-      {% endfor %}
-
     </main>
 
     {% include footer.html %}
-    
+
   </body>
 
 </html>
