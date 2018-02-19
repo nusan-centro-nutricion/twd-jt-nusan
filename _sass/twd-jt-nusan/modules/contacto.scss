@@ -1,5 +1,5 @@
 .contacto {
-
+  text-align: center;
 }
 
 .contacto__map {
@@ -8,7 +8,21 @@
 }
 
 .contacto__header {
+  margin-bottom: 2rem;
   img {
     max-width: 200px;
+  }
+}
+
+.contacto__content {
+  svg + * {
+    margin: 0 0.5rem;
+  }
+}
+
+.contacto__horario {
+  margin-bottom: 2rem;
+  h4 {
+    margin-bottom: 1rem;
   }
 }

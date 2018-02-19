@@ -23,7 +23,8 @@
     <i class="fa fa-envelope" aria-hidden="true"> </i><a itemprop="email" href="mailto:{{ dir.email }}">{{ dir.email }}</a>
 
     <div class="contacto__horario">
-      <h4><i class="fa fa-clock" aria-hidden="true"> </i>Horario</h4>
+      <i class="fa fa-clock" aria-hidden="true"> </i>
+      <h4>Horario</h4>
       {% for hour in dir.openingHours %}
       <meta itemprop="openingHours" content="{{ hour }}">{{ hour }}{% if forloop.last != true %}<br>{% endif %}
       {% endfor %}
