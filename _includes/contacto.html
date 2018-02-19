@@ -20,26 +20,22 @@
     <label class="text-hide">Web:</label>
     <a itemprop="url" href="{{ dir.url }}" class="text-hide">{{ dir.url }}</a>
     <label class="text-hide">Email:</label>
-    <a itemprop="email" href="mailto:{{ dir.email }}">{{ dir.email }}</a>
+    <i class="fa fa-envelope" aria-hidden="true"> </i><a itemprop="email" href="mailto:{{ dir.email }}">{{ dir.email }}</a>
 
     <div class="contacto__horario">
-      <h4 class="text-hide">Horario:</h4>
+      <h4><i class="fa fa-clock" aria-hidden="true"> </i>Horario</h4>
       {% for hour in dir.openingHours %}
       <meta itemprop="openingHours" content="{{ hour }}">{{ hour }}{% if forloop.last != true %}<br>{% endif %}
       {% endfor %}
     </div>
 
-    {% include google-map.html %}
+    <div class="contacto__map">
+      {% include google-map.html %}
+    </div>
 
-    <div class="contacto__map text-hide" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-
-      <label>Geo:</label>
-        <br>
-        Latitud: {{ dir.latitude }}
-        <br>
-        Longitude: {{ dir.longitude }}
-        <meta itemprop="latitude" content="{{ dir.geo.latitude }}" />
-        <meta itemprop="longitude" content="{{ dir.geo.longitude }}" />
+    <div class="contacto__geo" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+      <meta itemprop="latitude" content="{{ dir.geo.latitude }}" />
+      <meta itemprop="longitude" content="{{ dir.geo.longitude }}" />
     </div>
 
 </article>
