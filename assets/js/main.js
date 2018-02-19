@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   fali.appenfChild(fa)
 
   var uls = document.querySelectorAll('ul')
-  foreach(let ul of uls) {
+  for (let ul of uls) {
     ul.classList.add('fa-ul')
   }
 
   var lis = document.querySelectorAll('li')
-  foreach (let li of lis) {
+  for (let li of lis) {
     li.appenfChild(fali)
   }
 
