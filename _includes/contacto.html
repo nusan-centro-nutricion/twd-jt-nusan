@@ -29,7 +29,7 @@
       {% endfor %}
     </div>
 
-    <div class="contacto__map" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates" class="text-hide">
+    <div class="contacto__map text-hide" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
 
       {% include google-map.html %}
 
@@ -38,8 +38,8 @@
         Latitud: {{ dir.latitude }}
         <br>
         Longitude: {{ dir.longitude }}
-        <meta itemprop="latitude" content="{{ dir.latitude }}" />
-        <meta itemprop="longitude" content="{{ dir.longitude }}" />
+        <meta itemprop="latitude" content="{{ dir.geo.latitude }}" />
+        <meta itemprop="longitude" content="{{ dir.geo.longitude }}" />
     </div>
 
 </article>
