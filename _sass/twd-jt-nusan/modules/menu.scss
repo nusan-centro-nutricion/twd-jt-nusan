@@ -3,11 +3,13 @@
 }
 
 .menu--main {
+  display: flex;
   h1 {
     display: none;
   }
   .menu__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     //height: 3rem;
