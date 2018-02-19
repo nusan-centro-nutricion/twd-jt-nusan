@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var lis = document.querySelectorAll('main li')
   for (let li of lis) {
-    li.appenfChild(fali)
+    li.appendChild(fali)
   }
 
 
