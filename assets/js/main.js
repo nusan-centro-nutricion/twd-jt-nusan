@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   var fa = document.createElement('i')
   fa.classList.add('fas', 'fas-check')
-  fali.appenfChild(fa)
+  fali.appendChild(fa)
 
   var uls = document.querySelectorAll('main ul')
   for (let ul of uls) {
