@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     fali.classList.add('fa-li')
 
     let fa = document.createElement('i')
-    fa.classList.add('fas', 'fas-check')
+    fa.classList.add('fas', 'fa-check')
     fali.appendChild(fa)
     li.appendChild(fali)
   }
