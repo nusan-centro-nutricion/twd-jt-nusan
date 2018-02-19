@@ -20,11 +20,19 @@
   font-size: 2.0625rem;
 
   a {
+    width: fit-content;
     padding: 3rem;
+    justify-self: center;
     border-radius: 5px;
-    background-color: $hero-color;
+    border: solid $hero-color 1px;
+    background-color: opacify($hero-color, 0.6);
     color: $body-color;
+    font-size: 1rem;
+    text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+      box-shadow: 0 3px 5px opacify($black, 0.6);
+    }
   }
 }
 
