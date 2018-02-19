@@ -11,7 +11,7 @@
 
       {% assign texto = site.data.hero | where: 'language', page.language %}
       <section class="hero hero--front">
-        {{ texto.body }}
+        {{ texto[0].body }}
       </section>
 
     </main>
