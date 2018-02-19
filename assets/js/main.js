@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   fali.classList.add('fa-li')
 
   var fa = document.createElement('i')
-  i.classList.add('fas')
-  i.classList.add('fa-check')
+  fa.classList.add('fas')
+  fa.classList.add('fa-check')
   fali.appenfChild(fa)
 
   var uls = document.querySelectorAll('ul')
