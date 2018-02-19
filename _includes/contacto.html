@@ -29,9 +29,9 @@
       {% endfor %}
     </div>
 
-    <div class="contacto__map text-hide" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+    {% include google-map.html %}
 
-      {% include google-map.html %}
+    <div class="contacto__map text-hide" itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
 
       <label>Geo:</label>
         <br>
