@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener('DOMContentLoaded', function (event) {
   // Is this browser sufficiently modern to continue?
-  if ( !( "querySelector" in document && "addEventListener" in window && "getComputedStyle" in window) ) {
-    () => {return}
+  if (!('querySelector' in document && 'addEventListener' in window && 'getComputedStyle' in window)) {
+    () => { return }
   }
 
   var fali = document.createElement('span')
@@ -20,6 +20,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let li of lis) {
     li.appendChild(fali)
   }
-
-
 })
