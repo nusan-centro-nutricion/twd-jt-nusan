@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
     () => { return }
   }
 
-  var uls = document.querySelectorAll('main ul')
+  var uls = document.querySelectorAll('main section:not(.hero) ul')
   for (let ul of uls) {
     ul.classList.add('fa-ul')
   }
 
-  var lis = document.querySelectorAll('main li')
+  var lis = document.querySelectorAll('main section:not(.hero) li')
   for (let li of lis) {
     let fali = document.createElement('span')
     fali.classList.add('fa-li')
