@@ -9,9 +9,9 @@
 
     <main role="content">
 
-      {% assign texto = site.data.hero %}
+      {% assign texto = site.data.hero.texto | where: 'language', page.language %}
       <section class="hero hero--front">
-        {{ texto }}
+        {{ texto[0].body }}
       </section>
 
     </main>
