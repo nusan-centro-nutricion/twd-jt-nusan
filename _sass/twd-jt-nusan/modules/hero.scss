@@ -28,11 +28,11 @@
     background-color: transparentize($hero-color, 0.6);
     color: $body-color;
     font-size: 1rem;
-    text-shadow: 0;
+    text-shadow: none;
     text-decoration: none;
     text-transform: uppercase;
     &:hover {
-      background-color: transparentize($hero-color, 0.6);
+      background-color: transparentize($hero-color, 0.2);
       text-shadow: 0 3px 5px opacify($black, 0.6);
     }
   }
