@@ -2,7 +2,7 @@
 <article class="contacto" itemscope itemtype="http://schma.org/LifeStyleModification">
 
   <header class="contacto__header">
-    <h1 itemprop="name">{{ dir.name}}</h1>
+    <h1 itemprop="name" class="tex-hide">{{ dir.name}}</h1>
     <picture>
       <source srcset="/assets/images/logo.svg" type="image/svg+xml">
       <img src="/assets/images/logo.png" alt="{{ dir.name }}" itemprop="logo">
@@ -11,9 +11,9 @@
 
   <div class="contacto__content" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 
-    <span itemprop="streetAddress">{{ dir.streetAddress }}</span>
+    <span itemprop="streetAddress">{{ dir.address.streetAddress }}</span>
     <br>
-    <span itemprop="postalCode">{{ dir.postalCode }}</span> - <span itemprop="addressLocality">{{ dir.addressLocality }}</span>
+    <span itemprop="postalCode">{{ dir.address.postalCode }}</span> - <span itemprop="addressLocality">{{ dir.address.addressLocality }}</span>
 
     <label class="text-hide">Teléfono:</label>
     <i class="fa fa-phone" aria-hidden="true"> </i><span itemprop="telephone"> {{ dir.telephone }}</span>
