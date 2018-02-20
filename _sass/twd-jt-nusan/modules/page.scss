@@ -11,7 +11,7 @@
 .page__poster {
   min-height: 25vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .page__header {
   text-align: center;
@@ -37,7 +37,6 @@
   .page__poster {
     min-height: 50vh;
     background-position: center;
-    background-size: cover;
   }
   .page__content {
     padding: 0;
