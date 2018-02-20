@@ -10,7 +10,7 @@
 
 .page__poster {
   background-repeat: no-repeat;
-  background-position: bottom right
+  background-position: bottom right;
 }
 .page__header {
   text-align: center;
@@ -35,6 +35,7 @@
 @media screen and (min-width: 60em) {
   .page__poster {
     min-height: 50vh;
+    background-position: center;
   }
   .page__content {
     padding: 0;
