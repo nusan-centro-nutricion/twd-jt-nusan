@@ -1,17 +1,17 @@
 .page {
   margin-bottom: 6rem;
-  padding: 0 1rem;
 }
 
 .page__content {
   max-width: 48em;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .page__poster {
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 50vh;
+  min-height: 25vh;
 }
 .page__header {
   text-align: center;
@@ -34,7 +34,10 @@
 }
 
 @media screen and (min-width: 60em) {
-  .page {
+  .page__poster {
+    min-height: 50vh;
+  }
+  .page__content {
     padding: 0;
   }
 }
