@@ -1,6 +1,5 @@
 .page {
   margin-bottom: 6rem;
-  padding: 0 1rem;
 }
 
 .page__content {
@@ -8,6 +7,11 @@
   margin: 0 auto;
 }
 
+.page__poster {
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 20vh;"
+}
 .page__header {
 
 }
@@ -25,5 +29,11 @@
 .page__body {
   h2 {
     //margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .page {
+    padding: 0 1rem;
   }
 }
