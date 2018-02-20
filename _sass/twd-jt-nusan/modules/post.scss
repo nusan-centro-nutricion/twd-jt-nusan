@@ -17,8 +17,9 @@
 
 .post__image,
 .post__image--excerpt {
-  max-width: 100%;
   margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 .post__byline {
@@ -36,5 +37,5 @@
 }
 
 .post--list {
-  
+
 }
