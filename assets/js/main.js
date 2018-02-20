@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     ul.classList.add('fa-ul')
   }
 
-  var lis = document.querySelectorAll('main article li')
+  var lis = document.querySelectorAll('main article ul li')
   for (let li of lis) {
     let fali = document.createElement('span')
     fali.classList.add('fa-li')
