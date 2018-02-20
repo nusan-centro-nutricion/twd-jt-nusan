@@ -29,14 +29,14 @@ p {
 }
 hr { max-width: 48em; }
 
-ul {
+ul, ol {
   width: 80%;
   list-style: none;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
 
-li {
+ol {
   list-style: decimal;
 }
 
