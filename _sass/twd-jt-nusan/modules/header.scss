@@ -38,6 +38,9 @@
 }
 */
 
+/**
+  Header Global
+ */
 .header--global {
   max-height: 132px;
   padding: 1rem;
@@ -49,4 +52,8 @@
   img {
     max-height: 100px;
   }
+}
+
+.header__menu--global {
+  display: none;
 }

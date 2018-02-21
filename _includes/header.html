@@ -11,7 +11,7 @@
   {% assign menu = site.data.main-menu.items | where: "language", page.language %}
   <nav id="main-menu" class="header__menu--global">
     <h1><a href="#menu">Explore este sitio:</a></h1>
-    <ul id="menu" class="header_menu-list--global">
+    <ul id="menu" class="header__menu-list--global">
       {% for item in menu[0].item %}
       <li class="header_menu-item--global"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
       {% endfor %}
