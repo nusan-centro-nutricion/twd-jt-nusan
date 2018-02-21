@@ -1,43 +1,3 @@
-/*
-.header {
-
-}
-
-.header--global {
-  //margin-bottom: $header--global-mb;
-  //position: sticky;
-  //top: 0;
-  display: flex;
-  flex-flow: column wrap;
-  background-color: $body-bg-color;
-  box-shadow: 0 3px 5px rgba($black, 0.6);
-  z-index: 100;
-
-  h1 {
-    height: 100px;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-}
-
-.header__logo--global {
-  max-height: 100px;
-}
-
-@media screen and (min-width: 60em) {
-  .header--global {
-    flex-flow: row;
-    h1 {
-      flex: 1;
-    }
-    nav {
-      flex: 2;
-    }
-  }
-}
-*/
-
 /**
   Header Global
  */
@@ -200,21 +160,21 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.25s ease-out;
-    	text-align: right;
+    	text-align: center;
       li {
         a {
         	text-transform: uppercase;
         	text-decoration: none;
         	letter-spacing: 1px;
         	line-height: 2.5rem;
-        	color: $link-color-reverse;
+        	color: $link-color;
 
           &:visited {
-            color: $link-color-reverse;
+            color: $link-color;
           }
 
           &:hover {
-            color: $link-color;
+            color: $link-color-reverse;
           }
         }
       }
