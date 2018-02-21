@@ -6,9 +6,11 @@ layout: default
   <div class="post__content">
     <header class="post__header">
       <h1 class="post__title">{{ page.title }}</h1>
-      <figure>
-        <img class="post__image" src="{{ page.image }}" alt="">
-      </figure>
+      <picture>
+        <source srcset="/assets/images/large/{{ imagen }}" media="(min-width: 60em)">
+        <source srcset="{{ page.image }}" media="(min-width: 120em)">
+        <img class="post__image" src="/assets/images/medium/{{ imagen }}">
+      </picture>
       <p class="post__byline">{{ page.author }}</p>
       <p class="post__tags">{{ page.tags }}</p>
     </header>

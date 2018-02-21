@@ -2,7 +2,11 @@
   <div class="post__content">
     <header class="post__header">
       <h1 class="post__title">{{ post.title }}</h1>
-      <img class="post__image--excerpt" src="{{ post.image }}" alt="">
+      <picture>
+        <source srcset="/assets/images/large/{{ imagen }}" media="(min-width: 60em)">
+        <source srcset="{{ page.image }}" media="(min-width: 120em)">
+        <img class="post__image--excerpt" src="/assets/images/medium/{{ imagen }}">
+      </picture>
     </header>
     <a class="post__read-more" href="{{ post.url }}">seguir leyendo&hellip;</a>
   </div>
