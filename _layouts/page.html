@@ -7,9 +7,10 @@ layout: default
   {% assign imagen = page.image | split: '/' | last %}
   <div class="page__poster">
     <picture>
+      <source srcset="/assets/images/small/{{ imagen }}">
       <source srcset="/assets/images/medium/{{ imagen }}" media="(min-width: 60em)">
       <source srcset="/assets/images/large/{{ imagen }}" media="(min-width: 120em)">
-      <img src="/assets/images/small/{{ imagen }}">
+      <img src="{{ page.image }}">
     </picture>
   </div>
   {% endif %}
