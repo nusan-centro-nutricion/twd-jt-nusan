@@ -3,6 +3,7 @@ layout: default
 ---
 
 <article class="page">
+  {% if page.image %}
   {% assign imagen = page.image | split: '/' | last %}
   <div class="page__poster">
     <picture>
@@ -11,6 +12,7 @@ layout: default
       <img src="/assets/images/small/{{ imagen }}">
     </picture>
   </div>
+  {% endif %}
   <div class="page__content">
     <header class="page__header">
       <h1 class="page__title">{{ page.title }}</h1>
