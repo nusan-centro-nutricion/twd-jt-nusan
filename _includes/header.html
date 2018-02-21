@@ -1,19 +1,19 @@
 <header class="header header--global">
-  <h1 class="logo">
+  <h1 class="header__logo--global">
     <a href="{{ "/" | prepend: absolute_url }}">
       <picture>
         <source srcset="/assets/images/logo.svg" type="image/svg+xml">
-        <img class="header__logo--global" src="/assets/images/logo.png" alt="{{ site.title }}">
+        <img src="/assets/images/logo.png" alt="{{ site.title }}">
       </picture>
     </a>
   </h1>
 
   {% assign menu = site.data.main-menu.items | where: "language", page.language %}
-  <nav id="main-menu" class="menu menu--main">
+  <nav id="main-menu" class="header__menu--global">
     <h1><a href="#menu">Explore este sitio:</a></h1>
-    <ul id="menu" class="menu__list">
+    <ul id="menu" class="header_menu-list--global">
       {% for item in menu[0].item %}
-      <li class="menu__item"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+      <li class="header_menu-item--global"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
   </nav>

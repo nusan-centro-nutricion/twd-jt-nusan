@@ -4,6 +4,23 @@ document.addEventListener('DOMContentLoaded', function (event) {
     () => { return }
   }
 
+  window.document.documentElement.className += ' enhanced'
+
+  var nav = document.querySelector('#main-menu')
+  var navToggle = document.querySelector("#main-menu a[href='#menu']")
+
+  if (navToggle) {
+    navToggle.addEventListener('click',
+      function (e) {
+        if (nav.className === 'header__menu--global is-open') {
+          nav.className = 'header__menu--global'
+        } else {
+          nav.className = 'header__menu--global is-open'
+        }
+        e.preventDefault()
+      }, false)
+  }
+
   var uls = document.querySelectorAll('main article ul')
   for (let ul of uls) {
     ul.classList.add('fa-ul')

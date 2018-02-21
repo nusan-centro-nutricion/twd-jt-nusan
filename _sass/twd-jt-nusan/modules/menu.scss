@@ -2,6 +2,7 @@
 
 }
 
+/*
 .menu--main {
   display: flex;
   h1 {
@@ -42,3 +43,101 @@
     }
   }
 }
+*/
+
+/*
+.menu--main h1 a::before {
+	top: -2em;
+}
+.menu--main h1 a::before {
+	background-image: url('/assets/images/x.svg');
+	background-repeat: no-repeat;
+}
+.menu--main h1 a::after,
+.menu.is-open h1 a::before {
+	top: 0;
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.menu--main h1 a::after {
+	background-image: url('/assets/images/menu.svg');
+	background-repeat: no-repeat;
+}
+.menu--main.is-open h1 a::after {
+	top: 100%;
+}
+
+.enhanced .menu--main h1,
+.enhanced .menu--main h1 a {
+	display: block;
+	margin: 0;
+}
+.enhanced .menu--main h1 a {
+	background: $tone;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	width: 2.5em;
+	height: 2.5em;
+	position: absolute;
+	overflow: hidden;
+	right: 1rem;
+	top: 30px;
+	text-indent: -1000em;
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	-webkit-transform: rotateZ(360deg);
+	transform: translateZ(0);
+	z-index: 1000;
+}
+.enhanced .menu--main h1 a:hover {
+	background: $shadow;
+}
+.enhanced .menu--main.is-open h1 a,
+.enhanced .menu--main.is-open h1 a:hover {
+	background-color: $red;
+}
+.enhanced .menu--main h1 a::after,
+.enhanced .menu--main h1 a::before {
+	background-position: 50% 50%;
+	content: "";
+	font-weight: 300;
+	height: 2.5em;
+	left: 0;
+	line-height: 1;
+	position: absolute;
+	text-align: center;
+	-moz-transition: top .25s,-moz-transform .25s;
+	-ms-transition: top .25s,-ms-transform .25s;
+	-o-transition: top .25s,-o-transform .25s;
+	-webkit-transition: top .25s,-webkit-transform .25s;
+	transition: top .25s,transform .25s;
+	width: 100%;
+}
+
+.enhanced .menu--main ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+	text-align: right;
+}
+.enhanced .menu--main.is-open ul {
+	max-height: 20em;
+}
+.enhanced .menu--main ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	line-height: 2.5rem;
+	color: $shadow;
+}
+.enhanced .menu--main ul li a:visited {
+	color: $shadow;
+}
+.enhanced .menu--main ul li a:hover {
+	color: $tone;
+}
+*/
