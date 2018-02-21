@@ -246,3 +246,41 @@
     }
   }
 }
+
+@media screen and (min-width: 50em) {
+	.header--global {
+		display: flex;
+		//align-content: center;
+		justify-content: space-between;
+	}
+
+	.header__menu--global {
+		height: 100%;
+	}
+
+  .enhanced {
+    .header__menu--global {
+      h1 {
+        display: none;
+         a {
+           display: none;
+        }
+      }
+      ul {
+        overflow: hidden;
+        max-height: inherit;
+    		height: 100%;
+    		display: flex;
+    		//justify-content: space-around;
+    		align-items: center;
+    		//text-align: center;
+        li {
+          margin-left: 1rem;
+      		flex: 1;
+          a {
+            padding: 2.5rem 0;
+          }
+        }
+      }
+    }
+  }
