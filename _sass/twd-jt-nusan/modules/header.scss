@@ -115,3 +115,132 @@
     }
   }
 }
+
+.enhanced {
+  .header__menu--global {
+    h1 {
+      a {
+      	background: $tone;
+      	-webkit-border-radius: 50%;
+      	border-radius: 50%;
+      	width: 2.5em;
+      	height: 2.5em;
+      	position: absolute;
+      	overflow: hidden;
+      	right: 1rem;
+      	top: 30px;
+      	text-indent: -1000em;
+      	-moz-transform: translateZ(0);
+      	-ms-transform: translateZ(0);
+      	-o-transform: translateZ(0);
+      	-webkit-transform: rotateZ(360deg);
+      	transform: translateZ(0);
+      	z-index: 1000;
+
+        &:hover {
+          background: $shadow;
+        }
+      }
+    }
+  }
+}
+
+.enhanced {
+  .header__menu--global {
+    h1 {
+      a::after {
+        background-position: 50% 50%;
+      	content: "";
+      	font-weight: 300;
+      	height: 2.5em;
+      	left: 0;
+      	line-height: 1;
+      	position: absolute;
+      	text-align: center;
+      	-moz-transition: top .25s,-moz-transform .25s;
+      	-ms-transition: top .25s,-ms-transform .25s;
+      	-o-transition: top .25s,-o-transform .25s;
+      	-webkit-transition: top .25s,-webkit-transform .25s;
+      	transition: top .25s,transform .25s;
+      	width: 100%;
+      }
+    }
+  }
+}
+.enhanced {
+  .header__menu--global {
+    h1 {
+      a::before {
+        background-position: 50% 50%;
+      	content: "";
+      	font-weight: 300;
+      	height: 2.5em;
+      	left: 0;
+      	line-height: 1;
+      	position: absolute;
+      	text-align: center;
+      	-moz-transition: top .25s,-moz-transform .25s;
+      	-ms-transition: top .25s,-ms-transform .25s;
+      	-o-transition: top .25s,-o-transform .25s;
+      	-webkit-transition: top .25s,-webkit-transform .25s;
+      	transition: top .25s,transform .25s;
+      	width: 100%;
+      }
+    }
+  }
+}
+
+.enhanced {
+  .header--global {
+    ul {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.25s ease-out;
+    	text-align: right;
+      li {
+        a {
+        	text-transform: uppercase;
+        	text-decoration: none;
+        	letter-spacing: 1px;
+        	line-height: 2.5rem;
+        	color: $shadow;
+
+          &:visited {
+            color: $shadow;
+          }
+
+          &:hover {
+            color: $tone;
+          }
+        }
+      }
+    }
+  }
+}
+
+.enhanced {
+  .header__menu--global.is-open {
+    h1 {
+      a {
+        background-color: $red;
+
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
+    
+    ul {
+      max-height: 20em;
+       li {
+         a {
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1px;
+          line-height: 2.5rem;
+          color: $shadow;
+        }
+      }
+    }
+  }
+}
