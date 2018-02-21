@@ -251,11 +251,12 @@
 	.header--global {
 		display: flex;
 		//align-content: center;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	.header__menu--global {
 		height: 100%;
+    align-self: center;
 	}
 
   .enhanced {
@@ -276,7 +277,7 @@
     		align-items: center;
     		//text-align: center;
         li {
-          margin-left: 1rem;
+          margin: 0 1rem;
       		flex: 1;
           a {
             padding: 2.5rem 0;
