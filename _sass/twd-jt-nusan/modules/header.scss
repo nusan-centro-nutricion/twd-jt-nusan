@@ -44,10 +44,12 @@
 .header--global {
   //max-height: 132px;
   //padding: 1rem;
+  padding: 0.5rem 0;
 }
 
 .header__logo--global {
   margin: 0;
+  font-size: 1rem;
 
   img {
     max-height: 100px;
