@@ -9,9 +9,13 @@
 }
 
 .page__poster {
-  min-height: 25vh;
+  max-height: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 .page__header {
   text-align: center;
@@ -35,7 +39,7 @@
 
 @media screen and (min-width: 60em) {
   .page__poster {
-    min-height: 50vh;
+    max-height: 50vh;
     background-position: center;
   }
   .page__content {
