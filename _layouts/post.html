@@ -14,8 +14,8 @@ layout: default
         <img class="post__image" src="/assets/images/medium/{{ imagen }}">
       </picture>
       {% endif %}
-      <p class="post__byline">{{ page.author }}</p>
-      <p class="post__tags">{{ page.tags }}</p>
+      <p class="post__byline">por {{ page.author }}, {{ page.date }}</p>
+      <p class="post__tags">{{ page.tags | joint ',' }}</p>
     </header>
     <div class="post__body">
       {{ content }}
