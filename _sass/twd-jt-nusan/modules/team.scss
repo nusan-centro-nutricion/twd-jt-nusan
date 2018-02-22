@@ -28,6 +28,11 @@
   }
 }
 
+.team--list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @media screen and (min-width: 60em) {
   .team__content {
     padding: 0;
