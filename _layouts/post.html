@@ -14,7 +14,7 @@ layout: default
         <img class="post__image" src="/assets/images/medium/{{ imagen }}">
       </picture>
       {% endif %}
-      <p class="post__byline">por {{ page.author }}, {{ page.date }}</p>
+      <p class="post__byline">por {{ page.author }}, {{ page.date | date: '%A, %e de %B de %Y' }}</p>
       <p class="post__tags">{{ page.tags | join: ',' }}</p>
     </header>
     <div class="post__body">
