@@ -9,7 +9,7 @@
 
     <main role="content">
 
-      {% assign texto = site.data.hero.texto | where: 'language', page.language %}
+      {% assign texto = site.data.hero.texto | where: 'lang', page.lang %}
       <section class="hero hero--front">
         {{ texto[0].body | markdownify }}
         <a href="{{ texto[0].link }}">{{ texto[0].link-text }}</a>

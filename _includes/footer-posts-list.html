@@ -1,6 +1,6 @@
 <div class="post--list">
   <h4>Últimos posts</h4>
-  {% assign posts = site.posts | where: 'language', page.language | sort: 'date' %}
+  {% assign posts = site.posts | where: 'lang', page.lang | sort: 'date' %}
   {% for post in posts limit:3 %}
     {% include post-excerpt.html %}
   {% endfor %}
