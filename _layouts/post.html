@@ -19,10 +19,10 @@ layout: default
       {% assign mes = page.date | date: '%B' %}
       {% assign ano = page.date | date: '%Y' %}
       <div class="post__meta">
-        <span class="post__byline"><small>{{ page.author }}<small></span> | 
-        <span class="post_date"><small>{{ site.translations[page.lang][dia_semana] }}, {{ dia }} {{ site.translations[page.lang][mes] }} {{ ano }}</small></span> |
+        <span class="post_date"><small><i class="fas fa-calendar"></i> {{ site.translations[page.lang][dia_semana] }}, {{ dia }} {{ site.translations[page.lang][mes] }} {{ ano }}</small></span> |
+        <span class="post__byline"><small><i class="fas fa-user"></i> {{ page.author }}<small></span>
         <br>
-        <span class="post__tags"><small>{{ page.tags | join: ', ' }}<small></span>
+        <span class="post__tags"><small><i class="fas fa-tags"></i> {{ page.tags | join: ', ' }}<small></span>
       </div>
 
     </header>
