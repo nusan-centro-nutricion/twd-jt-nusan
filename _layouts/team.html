@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="team">
+  <div class="team__content">
+    <header class="team__header">
+      <h1 class="team__title">{{ page.title }}</h1>
+      {% if page.image %}
+      {% assign imagen = page.image | split: '/' | last %}
+      <div class="team__image">
+        <picture>
+          <source srcset="/assets/images/large/{{ imagen }}" media="(min-width: 60em)">
+          <source srcset="{{ page.image }}" media="(min-width: 120em)">
+          <img src="/assets/images/medium/{{ imagen }}">
+        </picture>
+      </div>
+      {% endif %}
+    </header>
+    <div class="team__body">
+      {{ content }}
+    </div>
+  </div>
+</article>

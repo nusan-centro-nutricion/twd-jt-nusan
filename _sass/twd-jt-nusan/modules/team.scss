@@ -1,0 +1,35 @@
+.team {
+  margin-bottom: 6rem;
+}
+
+.team__content {
+  max-width: 48em;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.team__image {
+  img {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.team__header {
+  text-align: center;
+}
+
+.team__title {
+  //margin-bottom: 2rem;
+}
+
+.team__body {
+  h2 {
+    //margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .team__content {
+    padding: 0;
+  }
+}
