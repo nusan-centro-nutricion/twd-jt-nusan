@@ -16,8 +16,6 @@ layout: default
   <div class="page__content">
     <header class="page__header">
       <h1 class="page__title">{{ page.title }}</h1>
-      <p class="post__byline">por {{ page.author }}, {{ page.date | date: '%A, %e de %B de %Y' }}</p>
-      <p class="post__tags">{{ page.tags | join: ',' }}</p>
     </header>
     <div class="page__body">
       {{ content }}
