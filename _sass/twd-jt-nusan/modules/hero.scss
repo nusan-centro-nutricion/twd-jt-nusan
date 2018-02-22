@@ -23,6 +23,7 @@
     width: fit-content;
     padding: 1rem 3rem;
     justify-self: center;
+    align-self: start;
     border-radius: 5px;
     border: solid $hero-color 1px;
     background-color: transparentize($hero-color, 0.6);
