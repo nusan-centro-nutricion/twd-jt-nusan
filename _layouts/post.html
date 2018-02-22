@@ -18,9 +18,13 @@ layout: default
       {% assign dia = page.date | date: '%e' %}
       {% assign mes = page.date | date: '%B' %}
       {% assign ano = page.date | date: '%Y' %}
-      <p class="post__byline">{{ page.author }}</p>
-      <p class="post_date">{{ site.translations[page.lang][dia_semana] }}, {{ dia }} {{ site.translations[page.lang][mes] }} {{ ano }}</p>
-      <p class="post__tags">{{ page.tags | join: ',' }}</p>
+      <div class="post__meta">
+        <span class="post__byline"><small>{{ page.author }}<small></span> | 
+        <span class="post_date"><small>{{ site.translations[page.lang][dia_semana] }}, {{ dia }} {{ site.translations[page.lang][mes] }} {{ ano }}</small></span> |
+        <br>
+        <span class="post__tags"><small>{{ page.tags | join: ', ' }}<small></span>
+      </div>
+
     </header>
     <div class="post__body">
       {{ content }}
