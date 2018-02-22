@@ -1,0 +1,16 @@
+<div class="team team--excerpt">
+  <div class="team__content">
+    <header class="team__header">
+      {% if persona.image %}
+      {% assign imagen = persona.image | split: '/' | last %}
+      <picture>
+        <source srcset="/assets/images/large/{{ imagen }}" media="(min-width: 60em)">
+        <source srcset="{{ persona.image }}" media="(min-width: 120em)">
+        <img class="post__image--excerpt" src="/assets/images/medium/{{ imagen }}">
+      </picture>
+      {% endif %}
+      <h1 class="team__title">{{ persona.title }}</h1>
+    </header>
+    <a class="post__read-more" href="{{ post.url }}">leer bio&hellip;</a>
+  </div>
+</div>

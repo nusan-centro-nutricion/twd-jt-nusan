@@ -1,0 +1,7 @@
+<div class="team--list">
+  <h4>Equipo</h4>
+  {% assign equipo = site.team | where: 'lang', page.lang %}
+  {% for persona in equipo %}
+    {% include team-excerpt.html %}
+  {% endfor %}
+</div>
