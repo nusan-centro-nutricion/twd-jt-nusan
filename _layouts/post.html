@@ -14,13 +14,12 @@ layout: default
         <img class="post__image" src="/assets/images/medium/{{ imagen }}">
       </picture>
       {% endif %}
-      {% assign fecha = page.date | date: '%A %e %B %Y' | split: ' ' %}
       {% assign dia_semana = page.date | date: '%A' %}
       {% assign dia = page.date | date: '%e' %}
       {% assign mes = page.date | date: '%B' %}
       {% assign ano = page.date | date: '%Y' %}
       <p class="post__byline">{{ page.author }}</p>
-      <p class="post_date">{% t dia_semana %}, {{ dia }} {% t mes %} {{ ano }}</p>
+      <p class="post_date">{{ site.translations[page.lang][dia_semana] }}, {{ dia }} {{ site.translations[page.lang][mes] }} {{ ano }}</p>
       <p class="post__tags">{{ page.tags | join: ',' }}</p>
     </header>
     <div class="post__body">
