@@ -15,7 +15,7 @@ layout: default
       </picture>
       {% endif %}
       <p class="post__byline">por {{ page.author }}, {{ page.date }}</p>
-      <p class="post__tags">{{ page.tags | joint ',' }}</p>
+      <p class="post__tags">{{ page.tags | join: ',' }}</p>
     </header>
     <div class="post__body">
       {{ content }}
