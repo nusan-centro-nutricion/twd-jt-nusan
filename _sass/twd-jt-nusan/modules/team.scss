@@ -35,7 +35,7 @@
 
   .team--list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 
     .team__title {
       h1 {
